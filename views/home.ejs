@@ -11,5 +11,11 @@
   <p> <%= RESTAURANT.address %></p>
   <p> <%= RESTAURANT.phone %></p>
 
+<p> <% if(RESTAURANT.isOpen) { %>
+    <p>"Yes we are open!"</p>
+    <% } else { %> 
+    <p>"Sorry, we are closed."!</p>
+    <% } %>
+
 </body>
 </html>
