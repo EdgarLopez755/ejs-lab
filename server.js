@@ -52,9 +52,13 @@ const RESTAURANT = {
   
 app.get('/', (req, res) => {
     res.render('home.ejs', {
-        msg: 'Welcome to the Greem Byte Bistro'
+        msg: 'Welcome to the Green Byte Bistro'
         ,RESTAURANT
     });
+})
+
+app.get('/menu', (req, res) => {
+    res.render('menu.ejs')
 })
 
 
